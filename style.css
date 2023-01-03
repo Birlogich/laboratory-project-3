@@ -1,0 +1,191 @@
+/*general*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+
+.text-gold {
+   color: #E3B873;
+}
+.text-titles {
+   font-family: 'Yeseva One', cursive;
+   text-transform: uppercase
+}
+.font-nunita {
+   font-family: 'Nunito Sans', sans-serif;
+}
+.text-general {
+   font-size: 14px;
+   line-height: 27px;
+   color: #FFFFFF;
+}
+
+.text-general-less {
+   font-size: 13px;
+}
+
+.link {
+   font-size: 14px;
+   line-height: 19px;
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 0.3);
+}
+
+/*content*/
+
+.content {
+   background-color: #131313;
+   flex: 1 1 auto;
+   width: 100%;
+}
+
+.slider__column {
+   width: 50%;
+}
+
+.slider__column:first-child {
+   margin-top: 50px;
+}
+
+.content__projects {
+   display: flex;
+   margin: 107px auto 0;
+   max-width: 1211px;
+   padding-right: 20px;
+   padding-left: 20px;
+}
+
+.slider__column-links {
+   max-width: 623px;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 26px;
+}
+
+/*column first*/
+
+.slider-title {
+   max-width: 253px;
+   position: relative;
+   margin-bottom: 34px;
+}
+
+.slider-title-text {
+   max-width: 234px;
+}
+.slider-title-line{
+   position: absolute;
+   height: 1px;
+   width: 92px;
+   background-color: #E3B873;
+   top: 53px;
+   right: 10px;
+}
+
+.slider-description {
+   max-width: 442px;
+   margin-bottom: 42px;
+}
+
+.slider-props {
+   display: flex;
+   justify-content: space-between;
+   max-width: 340px;
+   max-height: 390px;
+   margin-bottom: 85px;
+}
+
+.slider-props-column {
+   display: flex;
+   flex-direction: column;
+}
+
+.slider-props-name {
+   margin-bottom: 10px;
+}
+
+.slider-props-desc {
+   max-width: 115px;
+   height: 54px;
+}
+
+.slider-props-block-top {
+   flex: 1 1 auto;
+   margin-bottom: 35px;
+}
+
+/*slider*/
+.swiper {
+   height: 482px;
+   width: 679px;
+}
+
+.slider__link{
+   height: 24px;
+}
+
+.slider__link:hover {
+   color: #E3B873;
+   border-bottom: 1px solid #E3B873;
+}
+
+.slider-navigation {
+   display: flex;
+   max-width: 206px;
+   justify-content: space-between;
+}
+
+.slider-pagination {
+   display: flex;
+   align-items: center;
+}
+
+.slider-button-prev {
+   background-image: url("data:image/svg+xml,%3Csvg width='42' height='14' viewBox='0 0 42 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.63807 13.276L2.308e-05 6.638L6.63807 -3.78276e-05L7.58563 0.94753L1.89516 6.638L7.58563 12.3285L6.63807 13.276Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.94758 5.9681L41.4556 5.9681L41.4556 7.30817L0.94758 7.30816L0.94758 5.9681Z' fill='white'/%3E%3C/svg%3E%0A") !important;
+   background-color: transparent;
+   width: 42px;
+   height: 14px;
+}
+
+.slider-button-next {
+   background-image: url("data:image/svg+xml,%3Csvg width='42' height='14' viewBox='0 0 42 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M35.0451 -0.000183105L41.6831 6.63786L35.0451 13.2759L34.0975 12.3283L39.788 6.63786L34.0975 0.947384L35.0451 -0.000183105Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M40.7355 7.30776L0.227539 7.30776L0.227539 5.9677L40.7355 5.9677L40.7355 7.30776Z' fill='white'/%3E%3C/svg%3E") !important;
+   width: 42px;
+   height: 14px;
+   background-color: transparent;
+}
+
+.slider__wrapper {
+   height: 482px;
+   overflow: hidden;
+}
+
+.slider__inner-wrapper {
+   display: flex;
+   height: 100%;
+}
+
+.slider-slide {
+   flex-shrink: 0;
+}
+
+.slider__dot {
+   width: 10px;
+   height: 10px;
+   border: none;
+   padding: 0;
+   border-radius: 50%;
+   outline: none;
+   cursor: pointer;
+   transition: background-color .4s;
+   background: rgba(255, 255, 255, 0.3);
+}
+
+.slider__dot:not(:last-child) {
+   margin-right: 18px;
+}
+
+.slider__dot_active {
+   background-color: #FFFFFF;;
+}
+
+.slider__dot:not(.slider__dot_active):hover, 
+.slider__dot:not(.slider__dot_active):focus {
+   background: rgba(255, 255, 255, 0.3);
+}
